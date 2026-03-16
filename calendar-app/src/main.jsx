@@ -18,8 +18,11 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
 // نحتاج ReactDOM.createRoot حتى نركّب التطبيق داخل <div id="root"> الموجود في index.html.
 
+// render => هو المسؤول عن عرض التطبيق
+
 // Provider و store :-  Provider يوفّر Redux store لكل الكومبوننتات عبر Context. أي كومبوننت تقدر يستخدم useSelector و useDispatch.
 
+// RouterProvider  => هو الي يشغل خريظة النظام router.jsx
 // RouterProvider و appRouter :-  RouterProvider يفعّل React Router ويقرأ خريطة المسارات من appRouter (المعرّف في src/router.jsx).
 
-// ErrorBoundary :- كومبوننت كـ Class يمسك أي خطأ يصير أثناء render أو lifecycle في الأطفال ويعرض UI بديل بدل ما ينهار التطبيق.
+// ErrorBoundary :- كومبوننت كـ Class يمسك أي خطأ يصير أثناء render أو lifecycle  ويعرض UI بديل بدل ما ينهار التطبيق.

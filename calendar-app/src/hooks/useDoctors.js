@@ -1,7 +1,7 @@
 
 
 import { useMemo } from 'react';
-import { useGetDoctorsQuery } from '../features/api/doctorsApi';
+import { useGetDoctorsQuery } from '../domain/api/doctorsApi';
 import { resolveImageUrl } from '../utils/resolveImageUrl';
 
 export function useDoctors(params) {

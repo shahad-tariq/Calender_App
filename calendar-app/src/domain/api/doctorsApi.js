@@ -10,7 +10,6 @@ const DOCTORS_API_BASE =
 export const doctorsApi = baseApi.injectEndpoints({
   endpoints: (builder) => ({
     getDoctors: builder.query({
-      // نستخدم URL مطلق حتى لو baseUrl مختلف
       query: ({
         userType = '',
         clientId = '',
@@ -24,7 +23,7 @@ export const doctorsApi = baseApi.injectEndpoints({
           AD_Org_ID: orgId,
           Session_ID: sessionId,
         },
-        credentials: 'omit', 
+        credentials: 'omit',
         // method: 'GET' // افتراضي
       }),
       // نخلي الـ raw كما يجي من السيرفر (Array) حتى الهوك يحوّله لاحقًا
@@ -33,9 +32,9 @@ export const doctorsApi = baseApi.injectEndpoints({
       providesTags: (res) =>
         res?.length
           ? [
-              ...res.map((d) => ({ type: 'Doctors', id: d?.c_BPARTNER_ID })),
-              { type: 'Doctors', id: 'LIST' },
-            ]
+            ...res.map((d) => ({ type: 'Doctors', id: d?.c_BPARTNER_ID })),
+            { type: 'Doctors', id: 'LIST' },
+          ]
           : [{ type: 'Doctors', id: 'LIST' }],
     }),
   }),

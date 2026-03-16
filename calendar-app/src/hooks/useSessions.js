@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import { useGetSessionsQuery } from '../features/api/sessionsApi';
+import { useGetSessionsQuery } from '../domain/api/sessionsApi';
 
 export function useSessions(params) {
   const {
@@ -18,7 +18,7 @@ export function useSessions(params) {
         if (!dateStr) return null;
         const isoStr = dateStr.includes('T')
           ? dateStr
-          : dateStr.replace(' ', 'T'); 
+          : dateStr.replace(' ', 'T');
         const dt = new Date(isoStr);
         return isNaN(dt.getTime()) ? null : dt;
       };
