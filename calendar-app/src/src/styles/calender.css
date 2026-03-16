@@ -1,0 +1,278 @@
+.block-events.e-schedule .template-wrap {
+    width: 100%;
+}
+
+.block-events.e-schedule .e-vertical-view .e-resource-cells {
+    height: 58px;
+}
+
+.block-events.e-schedule .e-timeline-view .e-resource-left-td,
+.block-events.e-schedule .e-timeline-month-view .e-resource-left-td {
+    width: 170px;
+}
+
+.block-events.e-schedule .e-resource-cells.e-child-node .employee-category,
+.block-events.e-schedule .e-resource-cells.e-child-node .employee-name {
+    padding: 5px
+}
+
+.block-events.e-schedule .employee-image {
+    width: 45px;
+    height: 40px;
+    float: left;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-size: 45px;
+}
+
+.block-events.e-schedule .employee-name {
+    font-size: 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
+.block-events.e-schedule .employee-designation {
+    font-size: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
+.block-events.e-schedule .template-wrap .employee-image.alice {
+    background-image: url('https://ej2.syncfusion.com/react/demos/src/schedule/images/alice.png');
+}
+
+.block-events.e-schedule .template-wrap .employee-image.robert {
+    background-image: url('https://ej2.syncfusion.com/react/demos/src/schedule/images/robert.png');
+}
+
+.block-events.e-schedule .template-wrap .employee-image.robson {
+    background-image: url('https://ej2.syncfusion.com/react/demos/src/schedule/images/robson.png');
+}
+
+.block-events.e-schedule .template-wrap .employee-image.laura {
+    background-image: url('https://ej2.syncfusion.com/react/demos/src/schedule/images/laura.png');
+}
+
+.block-events.e-schedule .template-wrap .employee-image.nancy {
+    background-image: url('https://ej2.syncfusion.com/react/demos/src/schedule/images/nancy.png');
+}
+
+.block-events.e-schedule .template-wrap .employee-image.margaret {
+    background-image: url('https://ej2.syncfusion.com/react/demos/src/schedule/images/margaret.png');
+}
+
+
+@media (max-width: 550px) {
+    .e-schedule .e-day-view .employee-image {
+        display: none;
+    }
+  
+    .e-schedule .e-day-view .employee-name {
+        font-size: 14px;
+    }
+  
+    .e-schedule .e-day-view .employee-designation {
+        display: none;
+    }
+  }
+
+
+
+  /* ===== Toolbar ===== */
+.calendar-toolbar {
+  display: grid;
+  grid-template-columns: 1fr auto auto auto;
+  gap: 12px;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  margin: auto;
+  width: 50%;
+}
+
+/* Search box */
+.search-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #e6e6ea;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 24px;
+}
+
+.search-wrap .icon {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 26px;
+    height: 26px;
+    font-size: 43px;
+    margin-right: 8px;
+    align-items: center;
+}
+
+.search-wrap input {
+  flex: 1;
+  border: 0;
+  outline: 0;
+  font-size: 14px;
+  background: transparent;
+}
+
+/* Icon buttons */
+.icon-btn {
+  border: none;
+  outline: none;
+  background: #eef0ff;
+  color: #6366f1;
+  border-radius: 10px;
+  padding: 16px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-btn:hover { filter: brightness(0.98); }
+
+/* Primary button */
+.primary-btn {
+  border: none;
+  outline: none;
+  background: #6c63ff;
+  color: #fff;
+  border-radius: 10px;
+  padding:  16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.primary-btn:hover { filter: brightness(0.98); }
+
+/* Filters panel */
+.filters-panel {
+  margin: 10px 0 14px;
+  background: #fff;
+  border: 1px solid #e6e6ea;
+  border-radius: 10px;
+  padding: 10px 12px;
+}
+.filters-header {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 8px;
+}
+.filters-body { color: #555; }
+
+/* (اختياري) تنسيقات موجودة عندك */
+.template-wrap .employee-category { display:flex; align-items:center; gap:8px; }
+.employee-name { font-weight:600; }
+.employee-designation { color:#666; font-size:12px; }
+
+
+/* ===== Layout with Sidebar ===== */
+.layout {
+  display: grid;
+  grid-template-columns: 74px 1fr; /* عرض الشريط الجانبي */
+  min-height: 100vh;
+  background: #fafafa;
+}
+
+/* Sidebar */
+.sidebar {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  border-right: 1px solid #eee;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.brand {
+  height: 64px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #f2f2f2;
+}
+.brand-mark { display:block; }
+
+.nav-col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 14px 0;
+}
+
+.nav-item {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  border: none;
+  background: transparent;
+  color: #9aa0a6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.nav-item:hover { background: #f5f6fb; }
+.nav-item.active {
+  background: #f2f1ff;    /* خلفية بنفسجية فاتحة */
+  color: #6c63ff;          /* أيقونة بنفسجية */
+}
+
+.sidebar-bottom {
+  margin-top: auto;
+  padding: 12px 0 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.avatar {
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  background: #f1f1f4;
+  border: 1px solid #e6e6ea;
+  display: flex; align-items: center; justify-content: center;
+}
+.avatar-dot {
+  width: 12px; height: 12px;
+  background: #c4c4cc;
+  border-radius: 50%;
+}
+
+/* Modal */
+.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.4);display:flex;align-items:center;justify-content:center;z-index:9999}
+.modal{width:520px;max-width:90vw;background:#fff;border-radius:12px;box-shadow:0 12px 30px rgba(0,0,0,.18);overflow:hidden}
+.modal-header,.modal-footer{padding:12px 16px;background:#fff;display:flex;align-items:center;gap:8px}
+.modal-header{justify-content:space-between;border-bottom:1px solid #eee}
+.modal-footer{justify-content:flex-end;border-top:1px solid #eee}
+.modal-body{padding:16px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.field{display:flex;flex-direction:column;gap:6px}
+.field input,.field select{border:1px solid #e6e6ea;border-radius:10px;padding:10px 12px;font-size:14px}
+
+/* Resource header (اختياري) */
+.template-wrap .employee-category{display:flex;flex-direction:column}
+.employee-name{font-weight:600}
+.employee-designation{color:#666;font-size:12px}
+
+
+.e-resource-cell {
+  height: 60px !important; /* اجعلها ثابتة لكل الموارد */
+}
+.e-appointment {
+  line-height: 18px; /* يوازن النص داخل الأحداث */
+}
+
+
+.e-schedule .e-timeline-view .e-work-cells, .e-schedule .e-timeline-month-view .e-work-cells {
+    height: 90px !important;
+}
